@@ -9,7 +9,7 @@ RELAY = 9
 board.digital[RELAY].mode = 1   
 pin12 = board.get_pin('d:12:o')
 encoding_wajah = []
-file_path = "C:/Users/faiz/Desktop/aklsjdklasjdlk/DASD/faiz.jpg"
+file_path = "your path blablabla"
 foto = face_recognition.load_image_file(file_path)
 encoding_foto = face_recognition.face_encodings(foto)[0]
 encoding_wajah.append(encoding_foto)
@@ -170,4 +170,5 @@ else:
     print("Wajah tidak dikenali, relay tetap mati.")
     pin12.write(1)
     time.sleep(5) 
+
     pin12.write(0)
