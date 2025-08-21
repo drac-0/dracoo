@@ -1,3 +1,5 @@
+#also outdated, need an upgraded
+
 import os
 from cryptography.fernet import Fernet
 
